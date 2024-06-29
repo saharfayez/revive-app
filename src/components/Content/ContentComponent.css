@@ -1,0 +1,16 @@
+/* ContentComponent.css */
+.content-container {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+
+.content-image {
+  width: 50%;
+  max-width: 300px; /* Adjust as needed */
+}
+
+.content-text {
+  width: 50%;
+  padding: 20px;
+}
