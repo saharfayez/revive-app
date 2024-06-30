@@ -370,11 +370,14 @@ const Resources = () => {
 
     {
       name: "Hard Machine",
+      subfolders:[
+        {name:"Hard Machine",
 
       routes: [
         { method: "POST", path: "localhost:8000/api/rev/hard/revive/data" },
         { method: "POST", path: "localhost:8000/api/rev/hard/tourism/data" },
       ],
+    }],
     },
     {
       name: "Auth Admin / Owner",
@@ -440,6 +443,8 @@ const Resources = () => {
     },
     {
       name: "Mail",
+      subfolders:[{
+        name:"Mail",
 
       routes: [
         { method: "GET", path: "http://127.0.0.1:8000/api/rev/send/mail" },
@@ -452,13 +457,17 @@ const Resources = () => {
           path: "http://127.0.0.1:8000/api/rev/send/mail/users",
         },
       ],
+    }],
     },
     {
       name: "SMS",
+      subfolders:[{
+        name:"SMS",
 
       routes: [
         { method: "GET", path: "http://127.0.0.1:8000/api/rev/send/sms" },
       ],
+    }],
     },
   ];
 
